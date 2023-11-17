@@ -11,16 +11,20 @@ popular cloud providers, the default versions of the major components in the sta
   - Java OpenJDK 8
   - Docker community edition
   - QEMU packages
+
+# Prerequisites
+
+- Local installation of (git)[https://git-scm.com/downloads]
+- Local installation of (Packer)[https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli]
+- Local installation of (Terraform)[https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli]
+- An AWS, Azure or GCP subscription
   
 # Building the Environment
 
 This comprises of two stages:
 
 - Creation of a virtual machine image using packer
-
-**Note** 
-
-components versions and Ubuntu packages installed can be customized by editting the setup.sh script in the ```shared``` folder.
+  component versions and Ubuntu packages installed can be customized by editting the setup.sh script in the ```shared``` folder.
 
 - Deployment of a Terraform configuration that uses the image built with packer
 
