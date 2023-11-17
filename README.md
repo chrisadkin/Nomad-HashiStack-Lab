@@ -12,5 +12,18 @@ popular cloud providers, the default versions of the major components in the sta
   - Docker community edition
   - QEMU packages
   
+# Building the Environment
+
+This comprises of two stages:
+
+- Creation of a virtual machine image using packer
+
+**Note:** 
+
+  - components versions and Ubuntu packages installed can be customized by editting the setup.sh script in the folder
+called ```shared```
+
+
+- Deployment of a Terraform configuration that uses the image built with packer
 
   
