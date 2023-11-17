@@ -14,9 +14,9 @@ popular cloud providers, the default versions of the major components in the sta
 
 # Prerequisites
 
-- Local installation of [git](https://git-scm.com/downloads)
-- Local installation of [Packer](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli)
-- Local installation of [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- A local installation of [git](https://git-scm.com/downloads)
+- A local installation of [Packer](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli)
+- A local installation of [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - An AWS, Azure or GCP subscription
   
 # Building the Environment
