@@ -1,6 +1,6 @@
 # Overivew
 
-This repo is a will allow a (HashiStack)[https://hashistack.readthedocs.io/en/latest/] - comprising of Vault, Consul and Nomad on the all three of the 
+This repo is a will allow a [HashiStack](https://hashistack.readthedocs.io/en/latest/) - comprising of Vault, Consul and Nomad on the all three of the 
 popular cloud providers, the default versions of the major components in the stack are:
 
 - ```Nomad   1.6.3```
@@ -14,9 +14,9 @@ popular cloud providers, the default versions of the major components in the sta
 
 # Prerequisites
 
-- Local installation of (git)[https://git-scm.com/downloads]
-- Local installation of (Packer)[https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli]
-- Local installation of (Terraform)[https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli]
+- Local installation of [git](https://git-scm.com/downloads)
+- Local installation of [Packer](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli)
+- Local installation of [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - An AWS, Azure or GCP subscription
   
 # Building the Environment
