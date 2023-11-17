@@ -21,11 +21,10 @@ popular cloud providers, the default versions of the major components in the sta
   
 # Building the Environment
 
-This comprises of two stages:
+This comprises of the following stages:
 
-- Creation of a virtual machine image using packer
-  component versions and Ubuntu packages installed can be customized by editting the setup.sh script in the ```shared``` folder.
+1. Virtual machine image build
 
-- Deployment of a Terraform configuration that uses the image built with packer
+2. Terraform configuration deployment
 
-  
+3. Environment health checks
