@@ -23,8 +23,8 @@ export AWS_SESSION_EXPIRATION=<your session token expiry goes here>
 
 4. Open the ```variables.hcl``` file in the aws directory with a text editor and set the region on line two to the AWS region that you wish the cluster to be setup in.
 
-5. Open the ```setup.sh``` file in the ```shared\scripts``` directory and note the first thirty lines of the file, in particular the versions of
-   the components installed during AMI file creation, these can be customized by simply editting this file:
+5. Open the ```setup.sh``` file in the ```shared\scripts``` directory and note the first thirty lines of the file, the versions of
+   the components installed during AMI file creation and they can be customized by simply editting this file:
 ```
 #!/bin/bash
 
