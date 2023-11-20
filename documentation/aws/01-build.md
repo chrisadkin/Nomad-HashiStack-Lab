@@ -91,7 +91,7 @@ packer init image.pkr.hcl
 ```
 packer build image.pkr.hcl
 ```
-   at the end of the information output from running this command you should see something thatv looks like the following:
+   at the end of the output from this command you should see something that looks like the following:
    
 ```
 ==> Wait completed after 8 minutes 14 seconds
@@ -101,4 +101,3 @@ packer build image.pkr.hcl
 us-east-1: ami-0223da73fd3ccd229
 ```
    Note the ami id (ami-0223da73fd3ccd229 in this case) as this is required for creating the full blown environment with terraform.
-   
