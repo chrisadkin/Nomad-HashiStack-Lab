@@ -21,11 +21,10 @@ export AWS_SESSION_TOKEN=<your session token goes here>
 export AWS_SESSION_EXPIRATION=<your session token expiry goes here>
 ```
 
-4. Open the ```variables.hcl``` file in the aws directory with the text editor of your choice and set the region on line two of the file to a 
-   valid AWS region that you wish the cluster to be setup in.
+4. Open the ```variables.hcl``` file in the aws directory with a text editor and set the region on line two to the AWS region that you wish the cluster to be setup in.
 
-5. Open the ```setup.sh``` file in the ```shared\scripts``` directory and note the first thirty lines of the file, note that the verswions of
-   the components installed during AMI file creation are specified in this file and can be altered by editting it:
+5. Open the ```setup.sh``` file in the ```shared\scripts``` directory and note the first thirty lines of the file, in particular the versions of
+   the components installed during AMI file creation, these can be customized by simply editting this file:
 ```
 #!/bin/bash
 
@@ -83,11 +82,23 @@ JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 sudo apt-get update && sudo apt-get upgrade
 ```
 
+6. Download the packer plugins by running the following command whilst inside the aws directory:
+```
+packer init image.pkr.hcl
+```
    
-
-
+7. Build the AMI image:
+```
+packer build image.pkr.hcl
+```
+   at the end of the information output from running this command you should see something thatv looks like the following:
+   
+```
 ==> Wait completed after 8 minutes 14 seconds
 
 ==> Builds finished. The artifacts of successful builds are:
 --> amazon-ebs.hashistack: AMIs were created:
 us-east-1: ami-0223da73fd3ccd229
+```
+   Note the ami id (ami-0223da73fd3ccd229 in this case) as this is required for creating the full blown environment with terraform.
+   
