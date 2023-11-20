@@ -21,13 +21,10 @@ popular cloud providers, the default versions of the major components in the sta
   
 # Building the Environment
 
-This comprises of the following stages:
+This comprises of the following stages for AWS, for GCP and Azure follow the instructions in this HashiCorp tutorial [here](https://developer.hashicorp.com/nomad/tutorials/cluster-setup):
 
-1. Virtual machine image build
-   - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/01-build.md)
+1. [Virtual machine image build](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/01-build.md)
 
-3. Terraform configuration deployment
-    - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/02-apply.md) 
+3. [Terraform configuration deployment](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/02-apply.md) 
 
-5. Environment health checks
-   - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/03-check.md) 
+5. [Environment health checks](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/03-check.md) 
