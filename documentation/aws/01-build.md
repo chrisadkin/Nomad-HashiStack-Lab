@@ -58,7 +58,7 @@ CONSULTEMPLATECONFIGDIR=/etc/consul-template.d
 CONSULTEMPLATEDIR=/opt/consul-template
 ```
 
-   Also note the apt commands at the end of the file for installing packages on to the base image, this allows the resulting AMI file to be customized as
+   Also note the apt commands at the end of the file for installing packages onto the base image, this allows the resulting AMI file to be customized as
    appropriate:
 ```
 # Docker
