@@ -24,10 +24,10 @@ popular cloud providers, the default versions of the major components in the sta
 This comprises of the following stages:
 
 1. Virtual machine image build
-   - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/packer/aws/build.md)
+   - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/01-build.md)
 
 3. Terraform configuration deployment
-    - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/terraform/aws/apply.md) 
+    - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/02-apply.md) 
 
 5. Environment health checks
-   - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/health_check/aws/check.md) 
+   - [For AWS follow these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/03-check.md) 
