@@ -132,14 +132,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 
 # Qemu
-<<<<<<< HEAD:shared/scripts/setup.sh
 sudo apt-get -y install qemu-system qemu-efi qemu-user qemu-utils
-=======
-sudo apt-get -y install qemu-system qemu-efi qemu-user"
-
-# LibVirt
-# sudo apt-get -y install libvirt-clients libvirt-daemon libvirt-daemon-system libvirt-daemon-driver-qemu"
->>>>>>> 938cf53 (setup.sh altered):shared/setup.sh
 
 # Java
 sudo add-apt-repository -y ppa:openjdk-r/ppa
