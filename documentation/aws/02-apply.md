@@ -10,9 +10,10 @@ $ terraform console
 > exit
 ```
 
-2. Open the variables.hcl file with a text editor and:
-   - assign the values generated in the previous step to ```nomad_consul_token_id``` and ```nomad_consul_token_secret```
-   - assign a value to the ```key_material``` variable
+2. Open the variables.hcl file with a text editor and assign:
+   - the values generated in the previous step to ```nomad_consul_token_id``` and ```nomad_consul_token_secret```
+   - a value to the ```key_material``` variable
+   - the AMI id from the packer generated AMI to the ```ami``` variable
 ```
 # Packer variables (all are required)
 region                    = "us-east-1"
