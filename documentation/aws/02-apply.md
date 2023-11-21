@@ -36,3 +36,6 @@ terraform init
 ```
 terraform apply -var-file=variables.hcl
 ```
+  the tail of the output from running this command should look like this:
+
+  
