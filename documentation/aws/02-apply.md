@@ -24,3 +24,12 @@ nomad_consul_token_secret = "d14d6a73-a0f1-508d-6d64-6b0f79e5cb44"
 .
 .
 ```
+3. Initialise the terraform provider plugins required by the configuration:
+```
+terraform init
+```
+
+4. Apply the configuration:
+```
+terraform apply -var-file=variables.hcl
+```
