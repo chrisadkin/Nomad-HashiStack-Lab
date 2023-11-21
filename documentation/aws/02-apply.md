@@ -38,5 +38,24 @@ terraform init
 terraform apply -var-file=variables.hcl
 ```
   the tail of the output from running this command should look like this:
+```
+Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+IP_Addresses = <<EOT
+
+Client public IPs: 54.162.180.209
+
+Server public IPs: 54.166.228.108
+
+The Consul UI can be accessed at http://54.166.228.108:8500/ui
+with the bootstrap token: 2b562ae9-476f-53fa-dbe7-7a55aeeb7d9a
+
+EOT
+consul_bootstrap_token_secret = "2b562ae9-476f-53fa-dbe7-7a55aeeb7d9a"
+lb_address_consul_nomad = "http://54.166.228.108"
+```
+  
 
   
