@@ -39,7 +39,7 @@ terraform init
 ```
 terraform apply -var-file=variables.hcl
 ```
-  the tail of the output from running this command should look like this:
+  the tail of the output from running this command should look like this, make a note of this information:
 ```
 Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 
@@ -58,6 +58,8 @@ EOT
 consul_bootstrap_token_secret = "2b562ae9-476f-53fa-dbe7-7a55aeeb7d9a"
 lb_address_consul_nomad = "http://54.166.228.108"
 ```
+
+5. Test your HashiStack environment by performing the instructions listed here.
   
 
   
