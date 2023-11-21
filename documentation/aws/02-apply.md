@@ -59,7 +59,7 @@ consul_bootstrap_token_secret = "2b562ae9-476f-53fa-dbe7-7a55aeeb7d9a"
 lb_address_consul_nomad = "http://54.166.228.108"
 ```
 
-5. Test your HashiStack environment by performing the instructions listed here.
+5. Test your HashiStack environment by performing the instructions [listed here](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/03-check.md).
   
 
   
