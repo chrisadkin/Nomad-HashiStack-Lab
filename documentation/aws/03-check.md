@@ -5,4 +5,7 @@
    
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/01-nomad-console-init.png?raw=true">
 
-   
+2. Lets create a simple Nomad job, we will need a job spec file first by issuing the following command, do this on the machine you run packer and terraform from:
+```
+$ nomad job init --short
+```   
