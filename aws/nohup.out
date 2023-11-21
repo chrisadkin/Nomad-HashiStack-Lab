@@ -1,6 +1,0 @@
-time="2023-11-09T17:17:54Z" level=info msg="Starting Doormat Credential Server Endpoint"
-time="2023-11-09T17:17:54Z" level=info msg="Server started on: 127.0.0.1:9000"
-time="2023-11-09T19:17:59Z" level=fatal msg="Doormat auth credentials are invalid, exiting Credential Server mode now!"
-time="2023-11-21T09:15:47Z" level=info msg="Starting Doormat Credential Server Endpoint"
-time="2023-11-21T09:15:47Z" level=info msg="Server started on: 127.0.0.1:9000"
-time="2023-11-21T09:45:55Z" level=fatal msg="Doormat auth credentials are invalid, exiting Credential Server mode now!"
