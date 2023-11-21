@@ -102,4 +102,4 @@ us-east-1: ami-0223da73fd3ccd229
 ```
    Note the ami id (ami-0223da73fd3ccd229 in this case) as this is required for creating the full blown environment with terraform.
 
-8. Proceed to the deployment of HashiStack by following (these instructions)[https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/02-apply.md]
+8. Proceed to the deployment of HashiStack by following [these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/02-apply.md).
