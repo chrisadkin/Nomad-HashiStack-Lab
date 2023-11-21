@@ -41,25 +41,43 @@ terraform apply -var-file=variables.hcl
 ```
   the tail of the output from running this command should look like this, make a note of this information:
 ```
-Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
+Apply complete! Resources: 10 added, 0 changed, 0 destroyed.
 
 Outputs:
 
 IP_Addresses = <<EOT
 
-Client public IPs: 54.162.180.209
+Client public IPs: 18.234.68.88
 
-Server public IPs: 54.166.228.108
+Server public IPs: 54.80.81.45
 
-The Consul UI can be accessed at http://54.166.228.108:8500/ui
+The Consul UI can be accessed at http://54.80.81.45:8500/ui
 with the bootstrap token: 2b562ae9-476f-53fa-dbe7-7a55aeeb7d9a
 
 EOT
 consul_bootstrap_token_secret = "2b562ae9-476f-53fa-dbe7-7a55aeeb7d9a"
-lb_address_consul_nomad = "http://54.166.228.108"
+lb_address_consul_nomad = "http://54.80.81.45"
 ```
 
-5. Test your HashiStack environment by performing the instructions [listed here](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/03-check.md).
+5. Within the same directory (aws) run the post setupo script in order to obtain the information for logging into the Nomad console:
+```
+$ ./post-setup.sh
+```
+   the output of this scripts should appears as follows:
+```
+The Nomad user token has been saved locally to nomad.token and deleted from the Consul KV store.
+
+Set the following environment variables to access your Nomad cluster with the user token created during setup:
+
+export NOMAD_ADDR=$(terraform output -raw lb_address_consul_nomad):4646
+export NOMAD_TOKEN=$(cat nomad.token)
+
+
+The Nomad UI can be accessed at http://54.80.81.45:4646/ui
+with the bootstrap token: 9c7a4247-84e6-0bd7-e9e8-fea56667b48e
+```   
+
+6. Test your HashiStack environment by performing the instructions [listed here](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/03-check.md).
   
 
   
