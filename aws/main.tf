@@ -6,6 +6,11 @@ data "aws_vpc" "default" {
   default = true
 }
 
+resource "aws_key_pair" "deployer" {
+  key_name   = var.key_name
+  public_key = var.key_material
+}
+
 resource "aws_security_group" "consul_nomad_ui_ingress" {
   name   = "${var.name}-ui-ingress"
   vpc_id = data.aws_vpc.default.id

@@ -13,6 +13,12 @@ variable "ami" {
 
 variable "key_name" {
   description = "The name of the AWS SSH key to be loaded on the instance at provisioning."
+  default     = "hashistack-ssh-key.pem"
+}
+
+variable "key_material" {
+  description = "The name of the AWS SSH key to be loaded on the instance at provisioning."
+  default     = "hashistack-ssh-key.pem"
 }
 
 variable "retry_join" {
