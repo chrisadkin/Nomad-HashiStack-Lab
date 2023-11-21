@@ -1,6 +1,6 @@
 # Deploy HashiStack with Terraform
 
-Before performing these steps, an AMI image should be created first using [these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/01-build.md).
+Before performing these steps, an AMI image should be created using [these instructions](https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/documentation/aws/01-build.md).
 
 1. Generate UIDs for the consul token id and consul token secret:
 ```
