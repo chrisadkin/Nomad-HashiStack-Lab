@@ -33,3 +33,15 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Ignore terraform plugin installation directory
+.terraform
+
+# Ignore terraform lock file
+.terraform.lock.hcl
+
+# Ignore terraform state file and backup
+terraform.tfstate
+terraform.tfstate.backup
+
+nohup.out
