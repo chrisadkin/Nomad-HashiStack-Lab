@@ -108,5 +108,10 @@ nomad job run -check-index 0 example.nomad.hcl
 8. Inspect the job in the Nomad console:
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/04-nomad-job.png?raw=true">
+
+9. Click on 'example' the name of the job to view it in greater detail:
+
+<img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/04-nomad-job-detail.png?raw=true">
+    
    
    
