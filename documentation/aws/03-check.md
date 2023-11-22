@@ -105,5 +105,8 @@ nomad job run -check-index 0 example.nomad.hcl
     cache       1        1       1        0          2023-11-22T12:56:27Z
 ```
 
-8. Inspect the job in the Nomad console
+8. Inspect the job in the Nomad console:
+
+<img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/04-nomad-console-job.png?raw=true">
+   
    
