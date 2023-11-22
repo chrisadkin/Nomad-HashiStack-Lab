@@ -1,17 +1,19 @@
 # Post HashiStack Deployment Health Checks
 
 1. Check that you can access the Nomad console, to do this take the client ip address output from applying the terraform configuration and append ":4646" to the end of it.
-   Past this into your browser address bar and you should see the following:
+   Past this into your browser address bar and you should see the following.
    
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/01-nomad-console-init.png?raw=true">
 
-2. 
+   Click on the link in the middle of the screen to log into the console directory using a token.
+
+2. Supply the token string stored in the NOMAD_TOKEN environment variables ```export NOMAD_TOKEN=$(cat nomad.token)```:
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/02-nomad-console-token.png?raw=true">
 
 3.
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/01-nomad-console-logged-in.png?raw=true">
+<img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/03-nomad-console-logged-in.png?raw=true">
 
 
 4. Lets create a simple Nomad job, we will need a job spec file first by issuing the following command, do this on the machine you run packer and terraform from:
