@@ -7,7 +7,7 @@
 
    Click on the link in the middle of the screen to log into the console directory using a token.
 
-2. Supply the token string stored in the NOMAD_TOKEN environment variables ```export NOMAD_TOKEN=$(cat nomad.token)```:
+2. Supply the token string stored in the NOMAD_TOKEN environment variable ( ```export NOMAD_TOKEN=$(cat nomad.token)``` ):
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://github.com/chrisadkin/Nomad-HashiStack-Lab/blob/main/png_images/02-nomad-console-token.png?raw=true">
 
