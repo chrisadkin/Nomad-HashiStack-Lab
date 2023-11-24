@@ -140,6 +140,9 @@ resource "aws_instance" "server" {
     },
     {
       "NomadType" = "server"
+    },
+    {
+      "VaultAutoJoin" = "auto-join"
     }
   )
 

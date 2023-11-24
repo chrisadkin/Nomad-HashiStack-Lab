@@ -92,6 +92,8 @@ sudo mkdir -p $VAULTCONFIGDIR
 sudo chmod 755 $VAULTCONFIGDIR
 sudo mkdir -p $VAULTDIR
 sudo chmod 755 $VAULTDIR
+sudo mkdir -p $VAULTDIR/data
+sudo chmod 755 $VAULTDIR/data
 
 # Nomad
 
@@ -109,7 +111,6 @@ sudo mkdir -p $NOMADDIR
 sudo chmod 755 $NOMADDIR
 
 # Consul Template 
-
 curl -L $CONSULTEMPLATEDOWNLOAD > consul-template.zip
 
 ## Install
@@ -139,6 +140,3 @@ sudo add-apt-repository -y ppa:openjdk-r/ppa
 sudo apt-get update 
 sudo apt-get install -y openjdk-8-jdk
 JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
-
-# Upgrade packages if updates are available
-sudo apt-get update && sudo apt-get upgrade

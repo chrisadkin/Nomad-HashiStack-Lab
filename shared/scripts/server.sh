@@ -52,7 +52,9 @@ export CONSUL_HTTP_ADDR=$IP_ADDRESS:8500
 export CONSUL_RPC_ADDR=$IP_ADDRESS:8400
 
 # Vault
+NODE_ID=$(hostname)
 sed -i "s/IP_ADDRESS/$IP_ADDRESS/g" $CONFIGDIR/vault.hcl
+sed -i "s/NODE_ID/$NODE_ID/g" $CONFIGDIR/vault.hcl
 sudo cp $CONFIGDIR/vault.hcl $VAULTCONFIGDIR
 sudo cp $CONFIGDIR/vault.service /etc/systemd/system/vault.service
 
